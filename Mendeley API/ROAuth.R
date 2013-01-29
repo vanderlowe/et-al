@@ -1,3 +1,6 @@
+# This supposedly takes care of the OAuth authorization, but I haven't been able to get it to work.
+# However, this may not be necessary, as there appears to be ready-made code for python for Mendeley API
+
 require(ROAuth)
 
 reqURL <- "http://api.mendeley.com/oauth/request_token/"
