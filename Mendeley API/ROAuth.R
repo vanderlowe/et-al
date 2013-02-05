@@ -22,4 +22,3 @@ credentials$handshake()
 
 ## the GET isn’t strictly necessary as that’s the default
 credentials$OAuthRequest(testURL, "GET")
-## End(Not run)
