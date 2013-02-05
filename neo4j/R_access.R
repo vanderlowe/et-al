@@ -19,12 +19,12 @@ query <- function(querystring) {
   data
 }
 
-q <-"START j = node(*)
-MATCH j-[:wrote]->b<-[:wrote]-c
-WHERE j.type? = 'author'
-RETURN j.name, c.name"
+q <-"START i = node(*)
+MATCH i-[:wrote]->b<-[:wrote]-j
+WHERE i.type? = 'author'
+RETURN i.name, j.name"
 coauthors <- query(q)
-
+write.csv(coauthors, row.names = F)
 g <- simplify(graph.data.frame(d = coauthors, directed = T))
 
 plot(g,
