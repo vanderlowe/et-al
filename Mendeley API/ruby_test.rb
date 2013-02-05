@@ -1,4 +1,4 @@
-# This is a "Hello worl" API test
+# This is a "Hello world" API test
 # Mendeley gem for Ruby from
 # https://github.com/rweald/mendeley
 
